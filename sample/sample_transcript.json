@@ -1,0 +1,93 @@
+{
+  "ContactId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "Channel": "VOICE",
+  "InitiationTimestamp": "2026-04-06T14:30:00Z",
+  "DisconnectTimestamp": "2026-04-06T14:42:15Z",
+  "Transcript": [
+    {
+      "ParticipantId": "CUSTOMER",
+      "Content": "Hi, I'm calling to check on the status of my order. I placed it about two weeks ago and haven't received any shipping confirmation.",
+      "BeginOffsetMillis": 1200,
+      "EndOffsetMillis": 8500,
+      "Sentiment": "NEGATIVE"
+    },
+    {
+      "ParticipantId": "AGENT",
+      "Content": "Thank you for calling. I'd be happy to help you with your order status. Can I have your full name and order number to pull up your account?",
+      "BeginOffsetMillis": 9000,
+      "EndOffsetMillis": 16000,
+      "Sentiment": "NEUTRAL"
+    },
+    {
+      "ParticipantId": "CUSTOMER",
+      "Content": "Sure, it's John Martinez, order number 78234.",
+      "BeginOffsetMillis": 16500,
+      "EndOffsetMillis": 19200,
+      "Sentiment": "NEUTRAL"
+    },
+    {
+      "ParticipantId": "AGENT",
+      "Content": "Thank you, Mr. Martinez. I can see your order was placed on March 25th. It's currently in the fulfillment stage. The warehouse has flagged a slight delay due to a backorder on one of the items.",
+      "BeginOffsetMillis": 22000,
+      "EndOffsetMillis": 33000,
+      "Sentiment": "NEUTRAL"
+    },
+    {
+      "ParticipantId": "CUSTOMER",
+      "Content": "That's frustrating. I needed this by next week. How much longer is this going to take?",
+      "BeginOffsetMillis": 33500,
+      "EndOffsetMillis": 42000,
+      "Sentiment": "NEGATIVE"
+    },
+    {
+      "ParticipantId": "AGENT",
+      "Content": "I completely understand your frustration, and I'm sorry for the delay. Based on the current timeline, the backorder item should arrive at our warehouse within 3 to 5 business days. I can also flag this for expedited shipping at no extra charge once it's ready.",
+      "BeginOffsetMillis": 42500,
+      "EndOffsetMillis": 58000,
+      "Sentiment": "POSITIVE"
+    },
+    {
+      "ParticipantId": "CUSTOMER",
+      "Content": "Yes, please do that. And is there any way to track this online so I don't have to keep calling?",
+      "BeginOffsetMillis": 58500,
+      "EndOffsetMillis": 64000,
+      "Sentiment": "NEUTRAL"
+    },
+    {
+      "ParticipantId": "AGENT",
+      "Content": "Absolutely. You can check your order status on our website under the Track My Order section. You'll need to sign in with your account credentials. I've also submitted the expedited shipping request and added a note to your account. Is there anything else I can help you with today?",
+      "BeginOffsetMillis": 64500,
+      "EndOffsetMillis": 78000,
+      "Sentiment": "POSITIVE"
+    },
+    {
+      "ParticipantId": "CUSTOMER",
+      "Content": "No, that covers it. Thank you for your help.",
+      "BeginOffsetMillis": 78500,
+      "EndOffsetMillis": 81000,
+      "Sentiment": "POSITIVE"
+    },
+    {
+      "ParticipantId": "AGENT",
+      "Content": "You're welcome, Mr. Martinez. We'll do our best to get this to you as quickly as possible. Have a great day.",
+      "BeginOffsetMillis": 81500,
+      "EndOffsetMillis": 87000,
+      "Sentiment": "POSITIVE"
+    }
+  ],
+  "Categories": {
+    "MatchedCategories": ["OrderStatus", "Escalation"]
+  },
+  "ConversationCharacteristics": {
+    "Sentiment": {
+      "OverallSentiment": {
+        "CUSTOMER": -0.3,
+        "AGENT": 0.8
+      }
+    },
+    "TotalConversationDurationMillis": 87000,
+    "NonTalkTime": {
+      "TotalTimeMillis": 12000
+    }
+  }
+}

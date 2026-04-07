@@ -1,0 +1,29 @@
+# Terraform
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.build/
+terraform/tfplan
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+~$*
+
+# Claude
+.claude/
+
+# Excel temp files
+~$*.xlsx
+
+# Sensitive
+*.tfvars.local
+docs/
